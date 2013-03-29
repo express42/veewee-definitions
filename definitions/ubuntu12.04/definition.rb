@@ -14,7 +14,7 @@ Veewee::Session.declare({
     '<Esc><Esc><Enter>',
     '/install/vmlinuz noapic preseed/url=http://%IP%:%PORT%/preseed.cfg ',
     'debian-installer=en_US auto locale=en_US kbd-chooser/method=us ',
-    'hostname=%NAME% ',
+    'hostname=ubuntu ',
     'fb=false debconf/frontend=noninteractive ',
     'keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=USA keyboard-configuration/variant=USA console-setup/ask_detect=false ',
     'initrd=/install/initrd.gz -- <Enter>'
