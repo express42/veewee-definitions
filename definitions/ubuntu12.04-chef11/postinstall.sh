@@ -7,13 +7,6 @@ date > /etc/vagrant_box_build_time
 # etc., and remove optional things to trim down the machine.
 apt-get -y update
 apt-get -y upgrade
-apt-get -y install linux-headers-$(uname -r) build-essential
-apt-get -y install zlib1g-dev libssl-dev libreadline-gplv2-dev
-apt-get -y -t precise-updates install ruby
-apt-get -y -t precise-updates install rubygems
-#DEBIAN_FRONTEND=noninteractive apt-get -y install chef
-#service chef-client stop
-#update-rc.d chef-client disable
 apt-get -y install vim curl
 apt-get clean
 
